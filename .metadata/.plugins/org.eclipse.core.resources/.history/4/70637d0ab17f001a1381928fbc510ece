@@ -1,0 +1,10 @@
+package com.example.universityDemo.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@ApiModel(description ="Get University Details")
+
+public class UniversityController {
+
+}

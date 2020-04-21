@@ -1,0 +1,15 @@
+package com.basic.program;
+
+public class Swap_numbers {
+	int a=10;
+	int b=50;
+	
+	a=b;
+	b=a;
+	
+	public static void main(String args[])
+	{
+		
+	}
+
+}

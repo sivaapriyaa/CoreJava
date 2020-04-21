@@ -1,0 +1,26 @@
+package com.example.universityDemo.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.universityDemo.repository.BookRepository;
+import com.example.universityDemo.repository.DepartmentRepository;
+import com.example.universityDemo.repository.StudentRepository;
+import com.example.universityDemo.repository.TeacherRepository;
+
+@RestController
+public class UniversityController {
+	
+	@Autowired
+	private StudentRepository studentRepository;
+	@Autowired
+	private BookRepository bookRepository;
+	@Autowired
+	private TeacherRepository teacherRepository;
+	@Autowired
+	private DepartmentRepository departmentRepository;
+	
+	
+	
+
+}

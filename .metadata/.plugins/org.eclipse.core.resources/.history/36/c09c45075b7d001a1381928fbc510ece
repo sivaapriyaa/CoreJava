@@ -1,0 +1,19 @@
+package com.operators.decision;
+
+import java.util.Scanner;
+
+public class BreakContinue {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+				
+				while(input>0) {
+					int input=s.nextInt();
+					System.out.println("Great Going");
+					
+					break;
+		}
+				System.out.println("It's over");
+				}
+				
+	}

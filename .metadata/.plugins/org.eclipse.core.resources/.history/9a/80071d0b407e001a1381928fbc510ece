@@ -1,0 +1,9 @@
+package com.example.universityDemo.model;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name="student")
+public class Student implements Serializable {
+
+}

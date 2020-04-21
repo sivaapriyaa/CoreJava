@@ -1,0 +1,22 @@
+package com.operators.decision;
+
+import java.util.Scanner;
+
+public class CharacterInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+				char a=s.next().charAt(0);
+				char result=Character.toLowerCase(a);
+				if(aresult=='r') {
+					System.out.println("Found");
+				}
+				else {
+					System.out.println("Not Found");
+				}
+				
+
+	}
+
+}

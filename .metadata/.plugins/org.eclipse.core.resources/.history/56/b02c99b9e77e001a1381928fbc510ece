@@ -1,0 +1,4 @@
+package com.example.universityDemo.repository;
+
+public interface TeacherRepository extends JpaRepository
+

@@ -1,0 +1,7 @@
+package com.example.universityDemo.Controller;
+
+@RestController
+
+public class UniversityController {
+
+}

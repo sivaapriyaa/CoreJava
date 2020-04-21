@@ -1,0 +1,13 @@
+package com.basic.program;
+
+public class PrintValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(Sytem.in) {
+			
+		}
+
+	}
+
+}

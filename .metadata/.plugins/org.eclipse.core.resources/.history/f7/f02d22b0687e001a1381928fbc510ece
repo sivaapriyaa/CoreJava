@@ -1,0 +1,27 @@
+package com.example.universityDemo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="book")
+public class Book {
+	
+	@Id
+	@GeneratedValue
+	@Column(name="TEACHER_ID")
+	private Long id;
+	
+	@Column(name="TEACHER_NAME")
+	private String teacherName;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="DEPT_ID")
+	private Department dept;
+
+}

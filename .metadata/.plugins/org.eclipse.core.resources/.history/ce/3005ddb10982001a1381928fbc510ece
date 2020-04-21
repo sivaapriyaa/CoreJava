@@ -1,0 +1,20 @@
+package com.looping.statements;
+
+import java.io.BufferedReader;
+
+public class NumericOperations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=1;
+		while(n<10) {
+			System.out.println("Enter 10 numbers as input");
+			BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+			
+			int a=
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.basic.program;
+
+public class Swap_numbers {
+	
+	public void swap(int a,int b)
+	{
+		int result;
+	a=b;
+	result=b;
+	//b=c;
+	System.out.println("The value of a is:"+a);
+	System.out.println("The value of b is:"+result);
+	}
+	
+	public static void main(String args[])
+	{
+		Swap_numbers swapnum=new Swap_numbers();
+		swapnum.swap(10, 50);
+	}
+
+}

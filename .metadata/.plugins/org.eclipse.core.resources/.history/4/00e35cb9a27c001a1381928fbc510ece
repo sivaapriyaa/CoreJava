@@ -1,0 +1,20 @@
+package com.operators.decision;
+
+import java.util.Scanner;
+
+public class IfCondition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		int num=s.nextInt();
+		if((num%2)!=0)
+			System.out.println("New");
+		else if((num%2)==0) {
+			System.out.println("Old");
+		}
+		
+		
+	}
+
+}

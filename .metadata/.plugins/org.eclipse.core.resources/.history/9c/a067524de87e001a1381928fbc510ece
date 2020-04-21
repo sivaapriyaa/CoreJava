@@ -1,0 +1,9 @@
+package com.example.universityDemo.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.universityDemo.model.Book;
+
+public interface DepartmentRepository extends JpaRepository<Book, Long>{
+	
+}

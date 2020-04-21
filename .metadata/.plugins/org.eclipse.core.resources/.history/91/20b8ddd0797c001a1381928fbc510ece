@@ -1,0 +1,14 @@
+package com.operators.decision;
+
+public class Average {
+	
+	public static void avg(int a,b,c) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

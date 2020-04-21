@@ -1,0 +1,25 @@
+package com.example.universityDemo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="dept")
+public class Department {
+	@Id
+	@GeneratedValue
+	@Column(name="DEPT_ID")
+	private Long id;
+	
+	@Column(name="DEPT_NAME")
+	private String deptName;
+	
+	@OneToMany(mappedBy = "dept",cascade = CascadeType.ALL)
+	
+	private List<Student> student;
+
+}

@@ -1,0 +1,9 @@
+package com.example.universityDemo.model;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name=dept)
+public class Department {
+
+}

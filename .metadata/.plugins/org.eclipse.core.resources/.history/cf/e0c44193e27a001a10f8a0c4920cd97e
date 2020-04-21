@@ -1,0 +1,19 @@
+package com.basic.program;
+
+public class Swap_numbers {
+	int a=10;
+	int b=50;
+	
+	public void swap(int a,int b)
+	{
+	a=b;
+	b=a;
+	}
+	
+	public static void main(String args[])
+	{
+		Swap_numbers swap=new Swap_numbers();
+		swap.
+	}
+
+}

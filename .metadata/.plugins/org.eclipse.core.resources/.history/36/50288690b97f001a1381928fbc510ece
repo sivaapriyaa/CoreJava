@@ -1,0 +1,60 @@
+package com.example.universityDemo.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.universityDemo.model.Book;
+import com.example.universityDemo.model.Student;
+import com.example.universityDemo.model.Teacher;
+import com.example.universityDemo.repository.BookRepository;
+import com.example.universityDemo.repository.DepartmentRepository;
+import com.example.universityDemo.repository.StudentRepository;
+import com.example.universityDemo.repository.TeacherRepository;
+
+@RestController
+public class UniversityController {
+	
+	@Autowired
+	private StudentRepository studentRepository;
+	@Autowired
+	private BookRepository bookRepository;
+	@Autowired
+	private TeacherRepository teacherRepository;
+	@Autowired
+	private DepartmentRepository departmentRepository;
+	
+	@PostMapping(path="/addStudent")
+	@Transactional
+	public ResponseEntity<Object> addUniversity(@RequestBody Student input){
+		studentRepository.save(input);
+		return ResponseEntity.status(HttpStatus.OK).body("Student Details Added");
+	}
+	
+	@PostMapping(path="/addBook")
+	@Transactional
+	public ResponseEntity<Object> addBook(@RequestBody Book input){
+		bookRepository.save(input);
+		return ResponseEntity.status(HttpStatus.OK).body("Book Details Added");
+	}
+	
+	@PostMapping(path="/addTeacher")
+	@Transactional
+	public ResponseEntity<Object> addTeacher(@RequestBody Teacher input){
+		teacherRepository.save(input);
+		return ResponseEntity.status(HttpStatus.OK).body("Teacher Details Added");
+	}
+	
+	@PostMapping(path="/addDepartment")
+	@Transactional
+	public ResponseEntity<Object> addDepartment(@RequestBody Department input){
+		departmentRepository.save(input);
+		return ResponseEntity.status(HttpStatus.OK).body("Student Details Added");
+	}
+	
+
+}

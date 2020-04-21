@@ -1,0 +1,13 @@
+package com.example.universityDemo.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.universityDemo.repository.StudentRepository;
+
+@RestController
+public class UniversityController {
+	
+	private StudentRepository studentRepository;
+	
+
+}
